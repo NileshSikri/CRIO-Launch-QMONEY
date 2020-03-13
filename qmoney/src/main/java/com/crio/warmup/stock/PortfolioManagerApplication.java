@@ -12,8 +12,6 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 import java.util.UUID;
 import java.util.logging.Logger;
@@ -43,7 +41,6 @@ public class PortfolioManagerApplication {
     byte[] byteArray = Files.readAllBytes(file.toPath());
     String content = new String(byteArray,"UTF-8");
     ObjectMapper mapper = getObjectMapper();
-    mapper.registerModule(new JavaTimeModule());
     PortfolioTrade[] trades = mapper.readValue(content, PortfolioTrade[].class);
     List<String> symbols = new ArrayList<>();
     for (int i = 0; i < trades.length; i++) {
