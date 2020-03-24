@@ -1,0 +1,1 @@
+curl "https://api.tiingo.com/tiingo/daily/GOOGL/prices?startDate=2019-03-21&endDate=2019-03-23&token=ab4e0d5458fdddec402b911cce9372c6b80ad01d"
