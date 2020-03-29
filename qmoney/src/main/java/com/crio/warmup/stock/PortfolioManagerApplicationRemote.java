@@ -1,34 +1,21 @@
 
 package com.crio.warmup.stock;
 
-
 import com.crio.warmup.stock.dto.AnnualizedReturn;
 import com.crio.warmup.stock.dto.PortfolioTrade;
-import com.crio.warmup.stock.dto.TotalReturnsDto;
 import com.crio.warmup.stock.log.UncaughtExceptionHandler;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
-import java.io.File;
+
 import java.io.IOException;
 import java.net.URISyntaxException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.time.LocalDate;
-import java.time.temporal.ChronoUnit;
-import java.util.Arrays;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 import java.util.UUID;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
+
 import org.apache.logging.log4j.ThreadContext;
-import org.springframework.web.client.RestTemplate;
 
 
-public class PortfolioManagerApplication_REMOTE_1160 {
+public class PortfolioManagerApplicationRemote {
 
 
 
@@ -50,7 +37,7 @@ public class PortfolioManagerApplication_REMOTE_1160 {
 
   public static List<AnnualizedReturn> mainCalculateSingleReturn(String[] args)
       throws IOException, URISyntaxException {
-     return Collections.emptyList();
+    return Collections.emptyList();
   }
 
   // TODO: CRIO_TASK_MODULE_CALCULATIONS
@@ -66,7 +53,7 @@ public class PortfolioManagerApplication_REMOTE_1160 {
 
   public static AnnualizedReturn calculateAnnualizedReturns(LocalDate endDate,
       PortfolioTrade trade, Double buyPrice, Double sellPrice) {
-      return new AnnualizedReturn("", 0.0, 0.0);
+    return new AnnualizedReturn("", 0.0, 0.0);
   }
 
 

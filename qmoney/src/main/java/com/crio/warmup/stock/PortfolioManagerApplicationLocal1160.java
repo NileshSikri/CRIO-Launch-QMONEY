@@ -27,7 +27,7 @@ import org.apache.logging.log4j.ThreadContext;
 import org.springframework.web.client.RestTemplate;
 
 
-public class PortfolioManagerApplication_LOCAL_1160 {
+public class PortfolioManagerApplicationLocal1160 {
 
   public static List<String> mainReadFile(String[] args) throws IOException, URISyntaxException {
     File file = resolveFileFromResources(args[0]);
@@ -43,7 +43,7 @@ public class PortfolioManagerApplication_LOCAL_1160 {
   }
 
   private static void printJsonObject(Object object) throws IOException {
-    Logger logger = Logger.getLogger(PortfolioManagerApplication_LOCAL_1160.class.getCanonicalName());
+    Logger logger = Logger.getLogger(PortfolioManagerApplication.class.getCanonicalName());
     ObjectMapper mapper = new ObjectMapper();
     logger.info(mapper.writeValueAsString(object));
   }

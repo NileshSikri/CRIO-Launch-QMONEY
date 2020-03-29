@@ -4,8 +4,6 @@ package com.crio.warmup.stock;
 import com.crio.warmup.stock.dto.PortfolioTrade;
 import com.crio.warmup.stock.dto.TiingoCandle;
 
-import com.crio.warmup.stock.dto.AnnualizedReturn;
-import com.crio.warmup.stock.dto.PortfolioTrade;
 import com.crio.warmup.stock.dto.TotalReturnsDto;
 import com.crio.warmup.stock.log.UncaughtExceptionHandler;
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -18,7 +16,6 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.time.temporal.ChronoUnit;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
@@ -27,15 +24,11 @@ import java.util.logging.Logger;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 import org.apache.logging.log4j.ThreadContext;
 import org.springframework.web.client.RestTemplate;
 
 
-public class PortfolioManagerApplication_BACKUP_1160 {
+public class PortfolioManagerApplicationBackUp {
 
   public static List<String> mainReadFile(String[] args) throws IOException, URISyntaxException {
     File file = resolveFileFromResources(args[0]);
@@ -135,23 +128,21 @@ public class PortfolioManagerApplication_BACKUP_1160 {
   }
 
   public static void main(String[] args) throws Exception {
+
     Thread.setDefaultUncaughtExceptionHandler(new UncaughtExceptionHandler());
     ThreadContext.put("runId", UUID.randomUUID().toString());
-
-
-
     printJsonObject(mainCalculateSingleReturn(args));
-
+  }
+  
+  private static Object mainCalculateSingleReturn(String[] args) {
+    return null;
   }
 
-  private static Object mainCalculateSingleReturn(String[] args) {
-	return null;
-}
-
-private static void printJsonObject(Object mainCalculateSingleReturn) throws JsonProcessingException {
-    Logger logger = Logger.getLogger(PortfolioManagerApplication_BACKUP_1160.class.getCanonicalName());
+  private static void printJsonObject(Object mainCalculateSingleReturn) 
+      throws JsonProcessingException {
+    Logger logger = Logger.getLogger(PortfolioManagerApplication.class.getCanonicalName());
     ObjectMapper mapper = new ObjectMapper();
-	  logger.info(mapper.writeValueAsString(mainCalculateSingleReturn));
+    logger.info(mapper.writeValueAsString(mainCalculateSingleReturn));
   }   
 }
 
