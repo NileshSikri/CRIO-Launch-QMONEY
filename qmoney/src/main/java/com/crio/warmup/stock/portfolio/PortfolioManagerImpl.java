@@ -1,7 +1,5 @@
 package com.crio.warmup.stock.portfolio;
 
-
-
 import com.crio.warmup.stock.dto.AnnualizedReturn;
 import com.crio.warmup.stock.dto.PortfolioTrade;
 import com.crio.warmup.stock.dto.TiingoCandle;

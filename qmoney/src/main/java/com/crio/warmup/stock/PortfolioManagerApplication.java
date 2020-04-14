@@ -22,7 +22,6 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.UUID;
-import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -62,12 +61,6 @@ public class PortfolioManagerApplication {
 
     return symbols;
 
-  }
-
-  private static void printJsonObject(Object object) throws IOException {
-    Logger logger = Logger.getLogger(PortfolioManagerApplication.class.getCanonicalName());
-    ObjectMapper mapper = new ObjectMapper();
-    logger.info(mapper.writeValueAsString(object));
   }
 
   private static File resolveFileFromResources(String filename) throws URISyntaxException {

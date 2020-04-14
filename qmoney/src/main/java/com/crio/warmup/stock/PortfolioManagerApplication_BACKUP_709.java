@@ -64,7 +64,8 @@
 //        LocalDate endDate = LocalDate.parse(args[1]);
 //        String contents = readFileAsString(file);
 //        ObjectMapper objectMapper = getObjectMapper();
-//        return portfolioManager.calculateAnnualizedReturn(Arrays.asList(portfolioTrades), endDate);
+//        return portfolioManager.calculateAnnualizedReturn
+            // (Arrays.asList(portfolioTrades), endDate);
 //   }
 
 
