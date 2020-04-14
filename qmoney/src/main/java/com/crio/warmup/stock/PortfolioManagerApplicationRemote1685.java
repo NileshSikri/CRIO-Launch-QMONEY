@@ -1,10 +1,8 @@
 
 package com.crio.warmup.stock;
 
-import java.util.UUID;
-
 import com.crio.warmup.stock.log.UncaughtExceptionHandler;
-
+import java.util.UUID;
 import org.apache.logging.log4j.ThreadContext;
 
 // import com.crio.warmup.stock.dto.AnnualizedReturn;
@@ -25,7 +23,6 @@ import org.apache.logging.log4j.ThreadContext;
 // import java.util.Arrays;
 // import java.util.Comparator;
 // import java.util.List;
-// import java.util.UUID;
 // import java.util.logging.Level;
 // import java.util.logging.Logger;
 // import java.util.stream.Collectors;
@@ -34,7 +31,7 @@ import org.apache.logging.log4j.ThreadContext;
 // import org.springframework.web.client.RestTemplate;
 
 
-public class PortfolioManagerApplication_REMOTE_1685 {
+public class PortfolioManagerApplicationRemote1685 {
 
 
 

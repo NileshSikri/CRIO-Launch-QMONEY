@@ -132,7 +132,8 @@
 //     String resultOfResolveFilePathArgs0 = "/home/crio-user/workspace/ojhasaurabh2099-ME_QMONEY"
 //         + "/qmoney/bin/main/trades.json";
 //     String toStringOfObjectMapper = "com.fasterxml.jackson.databind.ObjectMapper@373ebf74";
-//     String functionNameFromTestFileInStackTrace = "PortfolioManagerApplicationTest.mainReadFile()";
+//     String functionNameFromTestFileInStackTrace = 
+        // "PortfolioManagerApplicationTest.mainReadFile()";
 //     String lineNumberFromTestFileInStackTrace = "22";
 
 //     return Arrays.asList(new String[] { valueOfArgument0, 
@@ -163,7 +164,8 @@
 //   // ./gradlew run --args="trades.json 2019-12-03"
 //   // And make sure that its printing correct results.
 
-//   public static List<String> mainReadQuotes(String[] args) throws IOException, URISyntaxException {
+//   public static List<String> mainReadQuotes(String[] args) 
+        // throws IOException, URISyntaxException {
 //     File file = resolveFileFromResources(args[0]);
 //     LocalDate endDate = LocalDate.parse(args[1]);
 //     byte[] byteArray = Files.readAllBytes(file.toPath());
@@ -244,7 +246,8 @@
 //           .replace("$ENDDATE", endDate.toString());
 
 //       try {
-//         TiingoCandle[] tiingoCandles = new RestTemplate().getForObject(url, TiingoCandle[].class);
+//         TiingoCandle[] tiingoCandles = new RestTemplate().
+        //     getForObject(url, TiingoCandle[].class);
 //         Double buyPrice = tiingoCandles[0].getOpen();
 //         Double sellPrice = tiingoCandles[tiingoCandles.length - 1].getClose();
 //         AnnualizedReturn obj = calculateAnnualizedReturns(endDate, 
@@ -277,9 +280,11 @@
 //     Double totalReturns = (sellPrice - buyPrice) / buyPrice;
 //     Double yearDiff = new Double(ChronoUnit.DAYS.between(trade.getPurchaseDate(), endDate));
 //     yearDiff = yearDiff / 365.0;
-//     Double annualizedReturns = Math.pow((1 + totalReturns), 1.0 / yearDiff) - 1;
+//     Double annualizedReturns = 
+        // Math.pow((1 + totalReturns), 1.0 / yearDiff) - 1;
 //     System.out.println(annualizedReturns);
-//     AnnualizedReturn obj = new AnnualizedReturn(trade.getSymbol(), annualizedReturns, totalReturns);
+//     AnnualizedReturn obj = new AnnualizedReturn(trade.getSymbol(), 
+        // annualizedReturns, totalReturns);
 //     return obj;
 //   }
 

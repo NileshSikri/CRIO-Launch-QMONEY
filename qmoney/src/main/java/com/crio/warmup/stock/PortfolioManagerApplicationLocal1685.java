@@ -28,7 +28,7 @@ import java.util.stream.Stream;
 import org.apache.logging.log4j.ThreadContext;
 import org.springframework.web.client.RestTemplate;
 
-public class PortfolioManagerApplication_LOCAL_1685 {
+public class PortfolioManagerApplicationLocal1685 {
   private static List<TotalReturnsDto> temp;
   // TODO: CRIO_TASK_MODULE_JSON_PARSING
   // Read the json file provided in the argument[0]. The file will be avilable in
