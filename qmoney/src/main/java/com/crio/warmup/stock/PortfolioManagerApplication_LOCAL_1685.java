@@ -22,14 +22,13 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.UUID;
-import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 import org.apache.logging.log4j.ThreadContext;
 import org.springframework.web.client.RestTemplate;
 
-public class PortfolioManagerApplication {
+public class PortfolioManagerApplication_LOCAL_1685 {
   private static List<TotalReturnsDto> temp;
   // TODO: CRIO_TASK_MODULE_JSON_PARSING
   // Read the json file provided in the argument[0]. The file will be avilable in
